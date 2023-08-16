@@ -48,3 +48,21 @@ textarea {
   height: 100px;
   resize: none;
 }
+
+#walletStatus {
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 150px;
+  text-align: center;
+}
+
+.connected {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.disconnected {
+  background-color: #f44336; /* Red */
+  color: white;
+}
