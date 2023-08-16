@@ -908,6 +908,13 @@ async function connectWallet() {
       });
       console.log(accounts);
       alert("Connected!");
+      if (accounts) {
+        document.getElementById("walletStatus").textContent = "Connected";
+        document.getElementById("walletStatus").className = "connected";
+      } else {
+        document.getElementById("walletStatus").textContent = "Disconnected";
+        document.getElementById("walletStatus").className = "disconnected";
+      }
     } catch (error) {
       console.error("User denied account access");
     }
