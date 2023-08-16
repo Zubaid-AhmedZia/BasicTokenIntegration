@@ -907,7 +907,6 @@ async function connectWallet() {
         method: "eth_requestAccounts",
       });
       console.log(accounts);
-      alert("Connected!");
       if (accounts) {
         document.getElementById("walletStatus").textContent = "Connected";
         document.getElementById("walletStatus").className = "connected";
